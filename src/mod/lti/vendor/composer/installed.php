@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'celtic/webpa-lti',
+        'pretty_version' => '3.2.0',
+        'version' => '3.2.0.0',
+        'reference' => NULL,
+        'type' => 'project',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'celtic/lti' => array(
+            'pretty_version' => 'v4.8.0',
+            'version' => '4.8.0.0',
+            'reference' => 'd45065552613c23045413af4596116424fa93bc0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../celtic/lti',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'celtic/webpa-lti' => array(
+            'pretty_version' => '3.2.0',
+            'version' => '3.2.0.0',
+            'reference' => NULL,
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'firebase/php-jwt' => array(
+            'pretty_version' => 'v5.5.1',
+            'version' => '5.5.1.0',
+            'reference' => '83b609028194aa042ea33b5af2d41a7427de80e6',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../firebase/php-jwt',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);
