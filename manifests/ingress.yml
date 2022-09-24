@@ -1,17 +1,17 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-    name: "cloudpa-8037"
+    name: "cloudpa-961b"
     labels:
-        app: "cloudpa-8037"
+        app: "cloudpa-961b"
     annotations:
         kubernetes.io/ingress.class: addon-http-application-routing
 spec:
     rules:
-        - host: default-cloudpa-8037.cfeffc71f0064612a62c.uksouth.aksapp.io
+        - host: default-cloudpa-961b.cfeffc71f0064612a62c.uksouth.aksapp.io
           http:
             paths:
             - path: /
               backend:
-                serviceName: "cloudpa-8037"
+                serviceName: "cloudpa-961b"
                 servicePort: 80
