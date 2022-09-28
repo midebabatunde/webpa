@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "cloudpa-fffa"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "cloudpa-fffa"
+  template:
+    metadata:
+      labels:
+        app: "cloudpa-fffa"
+    spec:
+      containers:
+        - name: "cloudpa-fffa"
+          image: "cloudpa.azurecr.io/cloudpa"
+          ports:
+          - containerPort: 80
