@@ -1,8 +1,3 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
 - none
 
@@ -18,8 +13,7 @@ steps:
     command: 'init'
     backendServiceArm: 'Azure subscription 1(ae3247b5-b388-4787-a41d-c153cbab0911)'
     backendAzureRmResourceGroupName: 'CloudPA'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/infra'
-    
+    workingDirectory: '$(System.DefaultWorkingDirectory)/infra'   
 - task: TerraformTaskV3@3
   inputs:
     provider: 'azurerm'
