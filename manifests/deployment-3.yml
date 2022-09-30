@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "cloudpa-8331"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "cloudpa-8331"
+  template:
+    metadata:
+      labels:
+        app: "cloudpa-8331"
+    spec:
+      containers:
+        - name: "cloudpa-8331"
+          image: "cloudpa.azurecr.io/cloudpa"
+          ports:
+          - containerPort: 80
